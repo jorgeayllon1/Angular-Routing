@@ -1,5 +1,5 @@
 ![Routing](https://www.aquaportail.com/pictures2201/cartographie-carte-de-la-terre.jpg)
-![Pipeline](https://gitlab.com/jorgeayllon1/Angular-Routing/badges/master/pipeline.svg)
+![Pipeline](https://gitlab.com/jorgeayllon1/Angular-Routing/badges/main/pipeline.svg)
 
 # Configuration
 
