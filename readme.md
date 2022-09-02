@@ -8,3 +8,5 @@ __AngularCLI : 10.0.1__
 __NodeJS : >=16.14.2__
 
 Il semblerait que la dernière version stable de node fonctionne. Au moins la version 16.14.2.
+
+Test en plus pour la CI.
