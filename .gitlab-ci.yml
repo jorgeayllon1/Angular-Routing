@@ -20,12 +20,12 @@ install_dependencies:
     paths:
       - node_modules
     policy: pull
-#  only:
-#    refs:
-#      - merge_requests
-#      - main
-#    changes:
-#      - package-lock.json
+  only:
+    refs:
+      - merge_requests
+      - main
+    changes:
+      - package-lock.json
 
 build_app:
   stage: build_and_test
@@ -35,8 +35,8 @@ build_app:
   script:
     - npm link @angular/cli@10.0.1
     - npm run build
-#  after_script:
-#    - cp $PROJECT_PATH/Dockerfile $APP_OUTPUT_PATH
+  after_script:
+    - cp $PROJECT_PATH/Dockerfile $APP_OUTPUT_PATH
   artifacts:
     name: "angular-app-pipeline"
     paths:
