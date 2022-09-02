@@ -19,5 +19,6 @@ install_dependencies:
     refs:
       - merge_requests
       - main
+      - dev
     changes:
       - package-lock.json
