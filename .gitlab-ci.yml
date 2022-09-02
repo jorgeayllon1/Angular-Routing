@@ -20,12 +20,12 @@ install_dependencies:
     paths:
       - node_modules
     policy: pull
-  only:
-    refs:
-      - merge_requests
-      - main
-    changes:
-      - package-lock.json
+#  only:
+#    refs:
+#      - merge_requests
+#      - main
+#    changes:
+#      - package-lock.json
 
 build_app:
   stage: build_and_test
