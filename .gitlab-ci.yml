@@ -49,3 +49,7 @@ build_app:
     paths:
       - node_modules
     policy: pull
+  only:
+    refs:
+      - merge_requests
+      - main
