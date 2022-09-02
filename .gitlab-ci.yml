@@ -33,7 +33,7 @@ build_app:
   tags:
     - docker
   script:
-    - npm build
+    - npm run build
 #  after_script:
 #    - cp $PROJECT_PATH/Dockerfile $APP_OUTPUT_PATH
   artifacts:
