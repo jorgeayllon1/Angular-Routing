@@ -34,6 +34,7 @@ build_app:
     - docker
   script:
     - npm link @angular/cli@10.0.1
+    - npm install --save-dev @angular-devkit/build-angular
     - npm run build
   after_script:
     - cp $PROJECT_PATH/Dockerfile $APP_OUTPUT_PATH
