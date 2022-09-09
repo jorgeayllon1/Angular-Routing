@@ -9,6 +9,8 @@ import { ProductEditInfoComponent } from './product-edit/product-edit-info.compo
 import { ProductEditTagsComponent } from './product-edit/product-edit-tags.component';
 
 import { SharedModule } from '../shared/shared.module';
+import { AuthGuard } from '../user/auth.guard';
+import { ProductEditGuard } from '../products/product-edit/product-edit.guard';
 
 @NgModule({
   imports: [
@@ -16,6 +18,7 @@ import { SharedModule } from '../shared/shared.module';
     RouterModule.forChild([
       {
         path: 'products',
+        //canActivate: [AuthGuard], TODO : Remettre le canActivate
         children: [
           {
             path: '',
@@ -29,6 +32,7 @@ import { SharedModule } from '../shared/shared.module';
           {
             path: ':id/edit',
             component: ProductEditComponent,
+            canDeactivate: [ProductEditGuard],
             resolve: { resolvedData: ProductResolver },
             children: [
               { path: '', redirectTo: 'info', pathMatch: 'full' },
